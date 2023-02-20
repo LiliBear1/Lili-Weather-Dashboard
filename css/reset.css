@@ -1,103 +1,41 @@
-/* Reset CSS example from https://css-tricks.com/reboot-resets-reasoning/ */
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    line-height: 1;
+    font-family: sans-serif;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
-    margin: 0;
-    padding: 0;
-    border: 0;
+h6 {
     font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-    display: block;
+input,
+select,
+option,
+optgroup,
+textarea,
+button,
+pre,
+code {
+    font-size: 100%;
+    font-family: inherit;
 }
 
-/* Remove default list styles */
-ul,
-ol {
+ol,
+ul {
     list-style: none;
-}
-
-/* Set default link styles */
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Set default font family and size */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    line-height: 1.5;
 }
