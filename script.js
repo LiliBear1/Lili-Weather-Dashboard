@@ -49,6 +49,18 @@ $(document).ready(function () {
         windSpeed
       );
 
+      // Add class to the div containing the current weather information
+      var currentWeatherCard = $("<div>").addClass("current-weather-card");
+      currentWeatherCard.append(
+        cityName,
+        currentDate,
+        weatherIcon,
+        temperature,
+        humidity,
+        windSpeed
+      );
+      $("#today").empty().append(currentWeatherCard);
+
       // Call the function to display the 5-day forecast
       displayForecast(city);
     });

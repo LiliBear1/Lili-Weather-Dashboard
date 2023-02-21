@@ -1,0 +1,22 @@
+.current-weather-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forecast-card {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+    width: 18%;
+    margin-right: 2%;
+    margin-bottom: 20px;
+  }
+  
+  .forecast-card:last-child {
+    margin-right: 0;
+  }
+  
