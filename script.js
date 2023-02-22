@@ -1,7 +1,21 @@
 var APIKey = "1763fe6138140963ea58871931876d27";
+var historyEl = $("#history");
 
 $(document).ready(function () {
   var APIKey = "1763fe6138140963ea58871931876d27";
+  var history = JSON.parse(localStorage.getItem("history")) || [];
+  for (let i = 0; i < history.length; i++) {
+    createHistoryButtons(history[i]);
+  }
+  function createHistoryButtons(city) {
+    var button = $("<button class = 'btn btn-secondary'>");
+    button.val(city);
+    button.text(city);
+    button.click(function (event) {
+      displayCurrentWeather(event.target.value)
+    });
+    historyEl.append(button);
+  }
 
   // Function displayCurrentWeather that takes a city parameter.
   function displayCurrentWeather(city) {
@@ -12,6 +26,11 @@ $(document).ready(function () {
       "&appid=" +
       APIKey +
       "&units=metric";
+    if (!history.includes(city)) {
+      createHistoryButtons(city);
+      history.push(city);
+      localStorage.setItem("history", JSON.stringify(history));
+    }
 
     // make AJAX request to OpenWeather API using queryURL variable and GET method
     // Also uses then function to handle response from API
@@ -92,7 +111,9 @@ function displayForecast(city) {
     // Loops through the 5-day forecast data and creates a new card for each day
     for (var i = 0; i < response.list.length; i += 8) {
       // Create jQuery elements to display the forecast for a single day
-      var card = $("<div>").addClass("card bg-primary text-white");
+      var card = $("<div>").addClass(
+        "card bg-secondary text-white forecast-card"
+      );
       var cardBody = $("<div>").addClass("card-body p-2");
 
       // create the date for the card
