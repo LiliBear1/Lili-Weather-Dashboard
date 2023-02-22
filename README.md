@@ -17,7 +17,7 @@ I have built a weather dashoard with form inputs, featuring dynamically updated 
 
 ## Deployed Page
 
-* [Deployed Page Link](XXXX)
+* [Deployed Page Link](https://lilibear1.github.io/Lili-Weather-Dashboard/)
 
 * [Git Page Link](https://github.com/LiliBear1/Lili-Weather-Dashboard) 
 
