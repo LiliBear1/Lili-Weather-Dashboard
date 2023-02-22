@@ -23,15 +23,33 @@ I have built a weather dashoard with form inputs, featuring dynamically updated 
 
 
 ## Process
+* Sign up for an API key on the OpenWeather API website
 
+* Explore the API documentation to get an idea of the different types of data you can retrieve, as well as the API endpoints
+
+* Set up development environment
+
+* Create a basic HTML/CSS layout
+
+* Fetch data from the OpenWeather API using JavaScript. The API key is required to make API requests
+
+* Display the current weather data: Use JavaScript to display the current weather data including things like the current temperature, the current, humidity and wind speed.
+
+* Display the five-day forecast data: Use JavaScript to display the five-day forecast data by looping through an array of data.
+
+* Adjust JavaScript to store history and append this so user can easily view city choices
+
+* Finally, adjust CSS so the app looks more user friendly.
+<br></br>
 
 
 ## Usage
+
   * Search for a city in the form input
 
   * You will then be presented with current and future conditions for that city 
 
-  * City is also then added to the search history
+  * City is also then added to the search history as buttons on the side so you can click on them to get the information again for the selected city
 
   * When you view the current weather conditions for that city, you will see:
 
@@ -50,8 +68,8 @@ I have built a weather dashoard with form inputs, featuring dynamically updated 
     * Humidity
     <br> </br>
 
-    ![Weather Demo GIF](/images/)
-
+    ![Weather Demo GIF](/images/Weather%20Dashboard.gif)
+    <br> </br>
 
 ## Additional notes
 
